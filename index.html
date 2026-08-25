@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Timothée Blaudin de Thé - Portfolio</title>
+  <link rel="icon" href="logos/profil.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" aria-label="Retour en haut">↑</button>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#" id="nav-home" class="active">Accueil</a></li>
+        <li><a href="#experience" id="nav-experience">Expériences</a></li>
+        <li><a href="#certifications" id="nav-certifications">Certifications</a></li>
+        <li><a href="#projects" id="nav-projects">Projets</a></li>
+        <li><a href="#skills" id="nav-skills">Compétences</a></li>
+        <li><a href="#contact" id="nav-contact">Contact</a></li>
+      </ul>
+      <button id="menu-toggle" class="icon-btn" aria-label="Menu">☰</button>
+      <div class="nav-controls">
+        <button onclick="toggleTheme()" class="icon-btn" title="Changer de thème">🌓</button>
+        <button onclick="toggleLanguage()" class="icon-btn" id="lang-btn" title="Changer de langue">🇺🇸 / 🇬🇧</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME SECTION -->
+    <section id="home" class="active">
+      <div class="hero">
+        <img src="logos/profil.png" alt="Timothée Blaudin de Thé">
+        <h1 id="greeting">Bienvenue !</h1>
+        <div class="typing-container">
+          <span id="static-intro" style="font-size: 1.5rem;">Je suis </span>
+          <span id="typed" class="accent-text" style="font-size: 1.5rem; font-weight: bold;"></span>
+        </div>
+        <!-- Removed original p id="intro" -->
+        <p id="intro2">Je recherche un stage à l’étranger de 3 mois, de juin à septembre.</p>
+        <div style="margin-top: 2rem;">
+          <a href="resume-timothee-BLAUDINDETHE.pdf" class="btn" id="download-btn" download>Télécharger mon
+            CV</a>
+        </div>
+        <div class="hero-scroll-hint">
+          <span>↓</span><span id="scroll-hint-text">Défiler</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience">
+      <h2 id="experience-title">Parcours & Expériences</h2>
+
+      <div class="linkedin-experience-container">
+        <!-- Work Experience Card -->
+        <div class="linkedin-card" id="experience-work-card">
+          <div class="linkedin-card-header">
+            <h3 id="exp-category-work">Expérience professionnelle</h3>
+          </div>
+          <div class="linkedin-card-list" id="experience-work-list"></div>
+        </div>
+
+        <!-- Education Card -->
+        <div class="linkedin-card" id="experience-education-card">
+          <div class="linkedin-card-header">
+            <h3 id="exp-category-education">Formation</h3>
+          </div>
+          <div class="linkedin-card-list" id="experience-education-list"></div>
+        </div>
+
+        <!-- Awards Card -->
+        <div class="linkedin-card" id="experience-awards-card">
+          <div class="linkedin-card-header">
+            <h3 id="exp-category-awards">Honneurs et récompenses</h3>
+          </div>
+          <div class="linkedin-card-list" id="experience-awards-list"></div>
+        </div>
+
+        <!-- Volunteering Card -->
+        <div class="linkedin-card" id="experience-volunteering-card">
+          <div class="linkedin-card-header">
+            <h3 id="exp-category-volunteering">Bénévolat</h3>
+          </div>
+          <div class="linkedin-card-list" id="experience-volunteering-list"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS SECTION -->
+    <section id="certifications">
+      <h2 id="certifications-title">Certifications</h2>
+      <div class="certifications-grid">
+        <a href="https://www.credly.com/badges/019bcfa0-0426-4b21-9f6a-debfe5636b9e" class="card cert-card"
+          target="_blank">
+          <h3>CompTIA Security+</h3>
+          <img src="logos/sec+.jpg" alt="CompTIA Logo">
+          <p id="cert-1-desc-1">• Maîtrise des principes essentiels de la cybersécurité.</p>
+          <p id="cert-1-desc-2">• Gestion des incidents et protection des données.</p>
+        </a>
+
+        <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/TWPYXMEXP7BK"
+          class="card cert-card" target="_blank">
+          <h3>AWS Fundamentals</h3>
+          <img src="logos/aws.png" alt="AWS Logo">
+          <p id="cert-2-desc-1">• EC2, S3, IAM, VPC et bonnes pratiques cloud.</p>
+        </a>
+
+        <a href="https://www.coursera.org/account/accomplishments/professional-cert/certificate/LP28Z8YYI6M0"
+          class="card cert-card" target="_blank">
+          <h3>Google Cybersecurity</h3>
+          <img src="logos/google.jpg" alt="Google Logo">
+          <p id="cert-3-desc-1">• Menaces courantes, gestion des accès, SIEM (Linux, SQL).</p>
+        </a>
+
+        <div class="card cert-card">
+          <h3>English – C1 Level</h3>
+          <img src="logos/ets.jpg" alt="TOEIC Logo">
+          <p id="cert-4-desc-1">Validation d’un niveau C1 en anglais professionnel.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+      <h2 id="projects-title">Projets</h2>
+      <div class="projects-grid">
+        <a href="https://github.com/DJ3T" class="card project-card" target="_blank">
+          <h3 id="proj-1-title">Serveur Linux</h3>
+          <p id="proj-1-desc">Administration d'un serveur Ubuntu pour mes projets.</p>
+          <br>
+          <ul>
+            <li id="proj-1-li-1">Stack : Ubuntu Server, Docker, Nginx, SSH, Bash.</li>
+            <li id="proj-1-li-2">Hébergement de sites web, d'API et de scripts personnels.</li>
+            <li id="proj-1-li-3">Apprentissage des systèmes Linux et automatisation.</li>
+          </ul>
+        </a>
+
+        <a href="https://github.com/DJ3T/Hashly" class="card project-card" target="_blank">
+          <h3 id="proj-2-title">Hashly</h3>
+          <p id="proj-2-desc">App décryptage hashs</p>
+          <br>
+          <ul>
+            <li id="proj-2-li-1">Projet universitaire qui détecte automatiquement l'agorithme de hashing
+              d'un hash donné, qui propose une méthode adaptée de craking et génère une commande prête à
+              l'emploi pour Hashcat.</li>
+          </ul>
+        </a>
+
+        <a href="https://github.com/DJ3T/weather-bot" class="card project-card" target="_blank">
+          <h3 id="proj-3-title">Weather Bot</h3>
+          <p id="proj-3-desc">Bot météo Discord</p>
+          <br>
+          <ul>
+            <li id="proj-3-li-1">Stack : Python, OpenWeatherMap, Telegram API.</li>
+            <li id="proj-3-li-2">Prévisions météo personnalisées.</li>
+            <li id="proj-3-li-3">Gestion fuseaux horaires.</li>
+          </ul>
+        </a>
+
+        <a href="https://github.com/DJ3T/PowerAudit/" class="card project-card" target="_blank">
+          <h3 id="proj-4-title">PowerAudit</h3>
+          <p id="proj-4-desc">Scanner de sécurité</p>
+          <br>
+          <ul>
+            <li id="proj-4-li-1">Scanner hors ligne de conformité Windows.</li>
+            <li id="proj-4-li-2">Audit de sécurité automatisé.</li>
+          </ul>
+        </a>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+      <h2 id="skills-title">Compétences</h2>
+
+      <div class="skills-profiles">
+        <a href="https://www.root-me.org/TimWasTakenIG" target="_blank" class="cyber-profile-btn fill-logo"
+          title="Root-Me">
+          <img src="logos/rootme.png" alt="Root-Me">
+        </a>
+        <a href="https://tryhackme.com/p/timthe" target="_blank" class="cyber-profile-btn fill-logo" title="TryHackMe">
+          <img src="logos/tryhack.png" alt="TryHackMe">
+        </a>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Technical Skills -->
+        <div class="card skill-card tech-card">
+          <h3 id="tech-skills-title">🛠️ Compétences Techniques</h3>
+          <ul id="tech-skills-list">
+            <!-- Populated by JS -->
+          </ul>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="card skill-card soft-card">
+          <h3 id="soft-skills-title">🧠 Savoir-être</h3>
+          <ul id="soft-skills-list">
+            <!-- Populated by JS -->
+          </ul>
+        </div>
+
+        <!-- Languages -->
+        <div class="card skill-card lang-card">
+          <h3 id="lang-skills-title">🌍 Langues</h3>
+          <ul id="lang-skills-list">
+            <!-- Populated by JS -->
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+      <h2 id="contact-title">Contact</h2>
+      <div class="experience-highlight card" style="margin: 0 auto 2rem; max-width: 600px;">
+        <div style="text-align: center;">
+          <img src="logos/mail.png" alt="Email" class="highlight-logo">
+          <h3 style="color: var(--accent-color); margin: 0.5rem 0;">Email</h3>
+          <h4 style="margin-bottom: 0.5rem;"><a href="mailto:timothee2t@gmail.com"
+              style="text-decoration: none; color: inherit;">timothee2t@gmail.com</a></h4>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="contact-container">
+        <a href="https://github.com/DJ3T" target="_blank" class="contact-icon">
+          <img src="logos/github.png" alt="GitHub">
+        </a>
+        <a href="mailto:timothee2t@gmail.com" class="contact-icon">
+          <img src="logos/mail.png" alt="Email">
+        </a>
+        <a href="https://www.linkedin.com/in/timothee-blaudin-de-the/" target="_blank" class="contact-icon">
+          <img src="logos/linkedin.png" alt="LinkedIn">
+        </a>
+      </div>
+      <div style="text-align: center;">
+        <a href="resume-timothee-BLAUDINDETHE.pdf" class="btn-outline" id="contact-download-btn" download>Télécharger mon CV</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p id="footer-text">Conçu par <strong>Timothée BLAUDIN DE THÉ</strong> · 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
