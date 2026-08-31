@@ -41,20 +41,27 @@
     <!-- HOME SECTION -->
     <section id="home" class="active">
       <div class="hero">
-        <img src="logos/profil.png" alt="Timothée Blaudin de Thé">
-        <h1 id="greeting">Bienvenue !</h1>
+        <div class="hero-avatar-container">
+          <a href="#experience" class="hero-avatar-wrapper" aria-label="Voir mon parcours chez Thales et mes expériences">
+            <img src="logos/profil.png" alt="Timothée Blaudin de Thé" class="hero-avatar">
+            <div class="hero-avatar-badge" title="Thales">
+              <img src="logos/thales.jpg" alt="Thales">
+            </div>
+          </a>
+        </div>
+
+        <h1 id="greeting">Welcome!</h1>
         <div class="typing-container">
-          <span id="static-intro" style="font-size: 1.5rem;">Je suis </span>
+          <span id="static-intro" style="font-size: 1.5rem;">I am </span>
           <span id="typed" class="accent-text" style="font-size: 1.5rem; font-weight: bold;"></span>
         </div>
         <!-- Removed original p id="intro" -->
-        <p id="intro2">Je recherche un stage à l’étranger de 3 mois, de juin à septembre.</p>
+        <p id="intro2">I am looking for a 3-month internship abroad, from June to September.</p>
         <div style="margin-top: 2rem;">
-          <a href="resume-timothee-BLAUDINDETHE.pdf" class="btn" id="download-btn" download>Télécharger mon
-            CV</a>
+          <a href="resume-timothee-BLAUDINDETHE-english.pdf" class="btn" id="download-btn" download>Download my Resume</a>
         </div>
         <div class="hero-scroll-hint">
-          <span>↓</span><span id="scroll-hint-text">Défiler</span>
+          <span>↓</span><span id="scroll-hint-text">Scroll</span>
         </div>
       </div>
     </section>
@@ -136,46 +143,45 @@
     <section id="projects">
       <h2 id="projects-title">Projets</h2>
       <div class="projects-grid">
-        <a href="https://github.com/DJ3T" class="card project-card" target="_blank">
-          <h3 id="proj-1-title">Serveur Linux</h3>
-          <p id="proj-1-desc">Administration d'un serveur Ubuntu pour mes projets.</p>
+        <div class="card project-card">
+          <h3 id="proj-1-title">Système de Partage de Fichiers Sécurisé</h3>
+          <p id="proj-1-desc">Projet CS 161 (UC Berkeley) - Stockage chiffré de bout en bout</p>
           <br>
           <ul>
-            <li id="proj-1-li-1">Stack : Ubuntu Server, Docker, Nginx, SSH, Bash.</li>
-            <li id="proj-1-li-2">Hébergement de sites web, d'API et de scripts personnels.</li>
-            <li id="proj-1-li-3">Apprentissage des systèmes Linux et automatisation.</li>
+            <li id="proj-1-li-1">Conception et implémentation d'un système de stockage et de partage de fichiers chiffré de bout en bout en Go.</li>
+            <li id="proj-1-li-2">Authentification utilisateur sécurisée et stockage confidentiel sur serveur non fiable.</li>
+            <li id="proj-1-li-3">Contrôle d'accès cryptographique pour le partage et la révocation de fichiers.</li>
           </ul>
-        </a>
+        </div>
+
+        <div class="card project-card">
+          <h3 id="proj-2-title">Serveur Linux</h3>
+          <p id="proj-2-desc">Administration d'un serveur Ubuntu pour mes projets.</p>
+          <br>
+          <ul>
+            <li id="proj-2-li-1">Stack : Ubuntu Server, Docker, Nginx, SSH, Bash.</li>
+            <li id="proj-2-li-2">Hébergement de sites web, d'API et de scripts personnels.</li>
+            <li id="proj-2-li-3">Apprentissage des systèmes Linux et automatisation.</li>
+          </ul>
+        </div>
 
         <a href="https://github.com/DJ3T/Hashly" class="card project-card" target="_blank">
-          <h3 id="proj-2-title">Hashly</h3>
-          <p id="proj-2-desc">App décryptage hashs</p>
+          <h3 id="proj-3-title">Hashly</h3>
+          <p id="proj-3-desc">App décryptage hashs</p>
           <br>
           <ul>
-            <li id="proj-2-li-1">Projet universitaire qui détecte automatiquement l'agorithme de hashing
-              d'un hash donné, qui propose une méthode adaptée de craking et génère une commande prête à
-              l'emploi pour Hashcat.</li>
+            <li id="proj-3-li-1">Projet universitaire qui détecte automatiquement l'algorithme de hashing d'un hash donné, qui propose une méthode adaptée de cracking et génère une commande prête à l'emploi pour Hashcat.</li>
           </ul>
         </a>
 
         <a href="https://github.com/DJ3T/weather-bot" class="card project-card" target="_blank">
-          <h3 id="proj-3-title">Weather Bot</h3>
-          <p id="proj-3-desc">Bot météo Discord</p>
+          <h3 id="proj-4-title">Weather Bot</h3>
+          <p id="proj-4-desc">Bot météo Discord</p>
           <br>
           <ul>
-            <li id="proj-3-li-1">Stack : Python, OpenWeatherMap, Telegram API.</li>
-            <li id="proj-3-li-2">Prévisions météo personnalisées.</li>
-            <li id="proj-3-li-3">Gestion fuseaux horaires.</li>
-          </ul>
-        </a>
-
-        <a href="https://github.com/DJ3T/PowerAudit/" class="card project-card" target="_blank">
-          <h3 id="proj-4-title">PowerAudit</h3>
-          <p id="proj-4-desc">Scanner de sécurité</p>
-          <br>
-          <ul>
-            <li id="proj-4-li-1">Scanner hors ligne de conformité Windows.</li>
-            <li id="proj-4-li-2">Audit de sécurité automatisé.</li>
+            <li id="proj-4-li-1">Stack : Python, OpenWeatherMap, Telegram API.</li>
+            <li id="proj-4-li-2">Prévisions météo personnalisées.</li>
+            <li id="proj-4-li-3">Gestion fuseaux horaires.</li>
           </ul>
         </a>
       </div>
