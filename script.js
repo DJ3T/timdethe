@@ -131,24 +131,38 @@ const translations = {
         },
         projects: {
             proj1: {
-                title: "Serveur Linux",
-                desc: "Administration d'un serveur Ubuntu pour mes projets.",
-                list: ["Stack : Ubuntu Server, Docker, Nginx, SSH, Bash.", "Hébergement de sites web, d'API et de scripts personnels.", "Apprentissage des systèmes Linux et automatisation."]
+                title: "Système de Partage de Fichiers Sécurisé",
+                desc: "Projet CS 161 (UC Berkeley) - Stockage chiffré de bout en bout",
+                list: [
+                    "Conception et implémentation d'un système de stockage et de partage de fichiers chiffré de bout en bout en Go.",
+                    "Authentification utilisateur sécurisée et stockage confidentiel sur serveur non fiable.",
+                    "Contrôle d'accès cryptographique pour le partage et la révocation de fichiers."
+                ]
             },
             proj2: {
-                title: "Hashly",
-                desc: "App décryptage hashs",
-                list: ["Projet universitaire qui détecte automatiquement l'agorithme de hashing d'un hash donné, qui propose une méthode adaptée de craking et génère une commande prête à l'emploi pour Hashcat."]
+                title: "Serveur Linux",
+                desc: "Administration d'un serveur Ubuntu pour mes projets.",
+                list: [
+                    "Stack : Ubuntu Server, Docker, Nginx, SSH, Bash.",
+                    "Hébergement de sites web, d'API et de scripts personnels.",
+                    "Apprentissage des systèmes Linux et automatisation."
+                ]
             },
             proj3: {
-                title: "Weather Bot",
-                desc: "Bot météo Discord",
-                list: ["Stack : Python, OpenWeatherMap, Telegram API.", "Prévisions météo personnalisées.", "Gestion fuseaux horaires."]
+                title: "Hashly",
+                desc: "App décryptage hashs",
+                list: [
+                    "Projet universitaire qui détecte automatiquement l'algorithme de hashing d'un hash donné, qui propose une méthode adaptée de cracking et génère une commande prête à l'emploi pour Hashcat."
+                ]
             },
             proj4: {
-                title: "PowerAudit",
-                desc: "Scanner de sécurité",
-                list: ["Scanner hors ligne de conformité Windows.", "Audit de sécurité automatisé."]
+                title: "Weather Bot",
+                desc: "Bot météo Discord",
+                list: [
+                    "Stack : Python, OpenWeatherMap, Telegram API.",
+                    "Prévisions météo personnalisées.",
+                    "Gestion fuseaux horaires."
+                ]
             }
         }
     },
@@ -283,31 +297,45 @@ const translations = {
         },
         projects: {
             proj1: {
-                title: "Linux Server",
-                desc: "Administration of an Ubuntu server to host my projects.",
-                list: ["Stack: Ubuntu Server, Docker, Nginx, SSH, Bash.", "Hosting websites, APIs, and personal automation scripts.", "Learning Linux administration and system automation."]
+                title: "Secure File Sharing System",
+                desc: "CS 161 Project (UC Berkeley) - End-to-end encrypted storage",
+                list: [
+                    "Design and implementation of an end-to-end encrypted file sharing and storage system in Go.",
+                    "Secure user authentication and confidential storage on untrusted servers.",
+                    "Cryptographic access control for file sharing and revocation."
+                ]
             },
             proj2: {
-                title: "Hashly",
-                desc: "Hash Decryption App",
-                list: ["University project that automatically detects the hashing algorithm of a given hash, proposes a suitable cracking method, and generates a ready-to-use command for Hashcat."]
+                title: "Linux Server",
+                desc: "Administration of an Ubuntu server to host my projects.",
+                list: [
+                    "Stack: Ubuntu Server, Docker, Nginx, SSH, Bash.",
+                    "Hosting websites, APIs, and personal automation scripts.",
+                    "Learning Linux administration and system automation."
+                ]
             },
             proj3: {
-                title: "Weather Bot",
-                desc: "Discord Weather Bot",
-                list: ["Stack: Python, OpenWeatherMap, Telegram API.", "Personalized weather forecasts.", "Time zone management."]
+                title: "Hashly",
+                desc: "Hash Decryption App",
+                list: [
+                    "University project that automatically detects the hashing algorithm of a given hash, proposes a suitable cracking method, and generates a ready-to-use command for Hashcat."
+                ]
             },
             proj4: {
-                title: "PowerAudit",
-                desc: "Security Scanner",
-                list: ["Offline Windows compliance scanner.", "Automated security audit."]
+                title: "Weather Bot",
+                desc: "Discord Weather Bot",
+                list: [
+                    "Stack: Python, OpenWeatherMap, Telegram API.",
+                    "Personalized weather forecasts.",
+                    "Time zone management."
+                ]
             }
         }
     }
 };
 
 // State
-let currentLang = 'fr';
+let currentLang = 'en';
 let typed;
 
 // DOM Elements
@@ -600,6 +628,15 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Avatar / Thales logo click -> Smooth scroll to experience section
+    const avatarWrapper = document.querySelector('.hero-avatar-wrapper');
+    if (avatarWrapper) {
+        avatarWrapper.addEventListener('click', (e) => {
+            e.preventDefault();
+            showSection('experience');
+        });
+    }
 
     // Force initial render of skills
     switchLang(currentLang);
