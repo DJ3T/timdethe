@@ -94,7 +94,7 @@ const translations = {
                     school: "ESAIP",
                     date: "2024–2029",
                     logo: "logos/esaip.jpg",
-                    fillLogo: false,
+                    fillLogo: true,
                     desc: "Spécialisation Cybersécurité et Réseaux",
                     active: true
                 },
@@ -260,7 +260,7 @@ const translations = {
                     school: "ESAIP",
                     date: "2024–2029",
                     logo: "logos/esaip.jpg",
-                    fillLogo: false,
+                    fillLogo: true,
                     desc: "Specialization in Cybersecurity and Networks",
                     active: true
                 },
@@ -369,7 +369,7 @@ function showSection(id) {
 function updateActiveNavLink() {
     let current = 'home';
     const headerOffset = 100; // offset threshold
-    
+
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
         if (window.pageYOffset >= (sectionTop - headerOffset)) {
