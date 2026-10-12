@@ -1,759 +1,673 @@
-// Translations
+/**
+ * Academic & Scientific Portfolio Script
+ * Timothée Blaudin de Thé
+ */
+
 const translations = {
-    fr: {
-        greeting: "Bienvenue !",
-        staticIntro: "Je suis",
-        typedItems: [
-            "ingénieur cybersécurité chez Thales en apprentissage."
-        ],
-        intro2: "Je recherche un stage à l’étranger de 3 mois, de juin à septembre.",
-        scrollHint: "Défiler",
-        download: "Télécharger mon CV",
-        navHome: "Accueil",
-        navSkills: "Compétences",
-        navCertifications: "Certifications",
-        navExperience: "Expériences",
-        navProjects: "Projets",
-        navContact: "Contact",
-        contact: "Contact",
-        footer: "Conçu par Timothée BLAUDIN DE THÉ.",
-        experienceTitle: "Parcours & Expériences",
-        skillsTitle: "Compétences",
-        projectsTitle: "Projets",
-        certificationsTitle: "Certifications",
-        contactTitle: "Contact",
-        skills: {
-            techTitle: "🛠️ Compétences Techniques",
-            softTitle: "🧠 Savoir-être",
-            langTitle: "🌍 Langues",
-            tech: [
-                "Sécurité des systèmes embarqués", "Tests d'intrusion (Web)", "Sécurité réseau",
-                "Cloud Security (AWS)", "Zero Trust", "Frameworks MITRE", "Analyse de logs (SIEM)",
-                "Audit de conformité (Windows)", "Python", "Bash", "SQL", "Docker & Nginx",
-                "Burp Suite", "Cryptographie & Hachage"
-            ],
-            soft: [
-                "Persévérance", "Curiosité technique", "Gestion de projet", "Capacité d'adaptation",
-                "Autonomie & Rigueur"
-            ],
-            lang: [
-                "Français (natif)", "Anglais (TOEIC 975/990)"
-            ]
-        },
-        certifications: {
-            cert1: ["• Maîtrise des principes essentiels de la cybersécurité.", "• Gestion des incidents et protection des données."],
-            cert2: ["• EC2, S3, IAM, VPC et bonnes pratiques cloud."],
-            cert3: ["• Menaces courantes, gestion des accès, SIEM (Linux, SQL)."],
-            cert4: ["Validation d’un niveau C1 en anglais professionnel."]
-        },
-        experience: {
-            categories: {
-                work: "Expérience professionnelle",
-                education: "Formation",
-                volunteering: "Bénévolat",
-                awards: "Honneurs et récompenses"
-            },
-            work: [
-                {
-                    role: "Apprenti Ingénieur Cybersécurité",
-                    company: "Thales",
-                    date: "2026 - Présent",
-                    logo: "logos/thales.jpg",
-                    fillLogo: true,
-                    desc: ["Participation à des projets complexes.", "Scripting pour le test de logiciels sur systèmes embarqués."]
-                },
-                {
-                    role: "Stagiaire",
-                    company: "Anolix",
-                    date: "2025",
-                    logo: "logos/anolix.jpg",
-                    fillLogo: true,
-                    desc: ["Gestion de stocks (Excel, Sage).", "Pentest : 2 tests d’intrusion web internes.", "Conception de logigrammes logistiques."]
-                },
-                {
-                    role: "Stagiaire",
-                    company: "Spinelle",
-                    date: "2021",
-                    logo: "logos/spinelle.jpg",
-                    fillLogo: false,
-                    desc: ["Création de produits de luxe avec une gemmologue."]
-                }
-            ],
-            education: [
-                {
-                    role: "Master Ingénierie des Réseaux et des Systèmes",
-                    school: "Université Paris-Saclay",
-                    date: "2030",
-                    logo: "logos/saclay.png",
-                    fillLogo: false,
-                    desc: "Spécialisation dans les réseaux complexes et la sécurité.",
-                    active: false
-                },
-                {
-                    role: "Diplôme d'ingénieur",
-                    school: "ESAIP",
-                    date: "2024–2029",
-                    logo: "logos/esaip.jpg",
-                    fillLogo: true,
-                    desc: "Spécialisation Cybersécurité et Réseaux",
-                    active: true
-                },
-                {
-                    role: "Summer Sessions",
-                    school: "UC Berkeley",
-                    date: "2026",
-                    logo: "logos/berkeley.png",
-                    fillLogo: true,
-                    desc: "Validation de COMPSCI 161 et COMPSCI 61A",
-                    active: true
-                }
-            ],
-            volunteering: [
-                {
-                    role: "Engagement associatif",
-                    company: "Terre de promesse",
-                    date: "2022",
-                    logo: "logos/tdp.jpg",
-                    fillLogo: false,
-                    desc: ["Construction d’une maison en bois pour réinsertion."]
-                }
-            ],
-            awards: [
-                {
-                    role: "Médaille d’Or Concours Lépine Jr",
-                    company: "Concours Lépine",
-                    date: "2021",
-                    logo: "logos/lepine.png",
-                    fillLogo: false,
-                    desc: ["Invention de l’Autorideau (rideau automatique) : système à base d'Arduino connecté à un moteur, des pièces imprimées en 3D et une structure en bois montée sur une tringle de rideau. Permet d'ouvrir et de fermer automatiquement un rideau à des heures programmables, résistant aux pannes de courant et s'adaptant aux changements d'heure."]
-                }
-            ]
-        },
-        projects: {
-            proj1: {
-                title: "Système de Partage de Fichiers Sécurisé",
-                desc: "Projet CS 161 (UC Berkeley) - Stockage chiffré de bout en bout",
-                list: [
-                    "Conception et implémentation d'un système de stockage et de partage de fichiers chiffré de bout en bout en Go.",
-                    "Authentification utilisateur sécurisée et stockage confidentiel sur serveur non fiable.",
-                    "Contrôle d'accès cryptographique pour le partage et la révocation de fichiers."
-                ]
-            },
-            proj2: {
-                title: "Serveur Linux",
-                desc: "Administration d'un serveur Ubuntu pour mes projets.",
-                list: [
-                    "Stack : Ubuntu Server, Docker, Nginx, SSH, Bash.",
-                    "Hébergement de sites web, d'API et de scripts personnels.",
-                    "Apprentissage des systèmes Linux et automatisation."
-                ]
-            },
-            proj3: {
-                title: "Hashly",
-                desc: "App décryptage hashs",
-                list: [
-                    "Projet universitaire qui détecte automatiquement l'algorithme de hashing d'un hash donné, qui propose une méthode adaptée de cracking et génère une commande prête à l'emploi pour Hashcat."
-                ]
-            },
-            proj4: {
-                title: "Weather Bot",
-                desc: "Bot météo Discord",
-                list: [
-                    "Stack : Python, OpenWeatherMap, Telegram API.",
-                    "Prévisions météo personnalisées.",
-                    "Gestion fuseaux horaires."
-                ]
-            }
-        }
+  en: {
+    metaTitle: "Timothée Blaudin de Thé",
+    metaDesc: "Personal and academic homepage of Timothée Blaudin de Thé - Cybersecurity Engineer Apprentice at Thales, engineering student at ESAIP, UC Berkeley Summer Sessions.",
+    siteTitle: "Timothée Blaudin de Thé",
+    sidebar: {
+      bio: "Cybersecurity Engineer Apprentice @ Thales",
+      location: "France",
+      cvText: "Curriculum Vitae (PDF)",
+      cvFile: "resume-timothee-BLAUDINDETHE-english.pdf"
     },
-    en: {
-        greeting: "Welcome!",
-        staticIntro: "I am",
-        typedItems: [
-            "an apprentice Cybersecurity Engineer at Thales.",
-        ],
-        intro2: "I am looking for a 3-month internship abroad, from June to September.",
-        scrollHint: "Scroll",
-        download: "Download my Resume",
-        navHome: "Home",
-        navSkills: "Skills",
-        navCertifications: "Certifications",
-        navExperience: "Experience",
-        navProjects: "Projects",
-        navContact: "Contact",
-        contact: "Contact",
-        footer: "Designed by Timothée BLAUDIN DE THÉ.",
-        experienceTitle: "Career & Experience",
-        skillsTitle: "Skills",
-        projectsTitle: "Projects",
-        certificationsTitle: "Certifications",
-        contactTitle: "Contact",
-        skills: {
-            techTitle: "🛠️ Technical Skills",
-            softTitle: "🧠 Soft Skills",
-            langTitle: "🌍 Languages",
-            tech: [
-                "Embedded Systems Security", "Web Pentesting", "Network Security",
-                "Cloud Security (AWS)", "Zero Trust", "MITRE Frameworks", "Log Analysis (SIEM)",
-                "Compliance Auditing (Windows)", "Python", "Bash", "SQL", "Docker & Nginx",
-                "Burp Suite", "Cryptography & Hashing"
-            ],
-            soft: [
-                "Persistence", "Technical Curiosity", "Project Management", "Adaptability",
-                "Autonomy & Rigor"
-            ],
-            lang: [
-                "French (Native)", "English (TOEIC 975/990)"
-            ]
-        },
-        certifications: {
-            cert1: ["• Mastery of essential cybersecurity principles.", "• Incident management and data protection."],
-            cert2: ["• EC2, S3, IAM, VPC, and cloud best practices."],
-            cert3: ["• Common threats, access management, SIEM (Linux, SQL)."],
-            cert4: ["Validation of C1 level in professional English."]
-        },
-        experience: {
-            categories: {
-                work: "Work Experience",
-                education: "Education",
-                volunteering: "Volunteering",
-                awards: "Honors & Awards"
-            },
-            work: [
-                {
-                    role: "Cybersecurity Engineer Apprentice",
-                    company: "Thales",
-                    date: "2026 - Present",
-                    logo: "logos/thales.jpg",
-                    fillLogo: true,
-                    desc: ["Involvement in complex projects.", "Scripting for software testing in embedded systems."]
-                },
-                {
-                    role: "Intern",
-                    company: "Anolix",
-                    date: "2025",
-                    logo: "logos/anolix.jpg",
-                    fillLogo: true,
-                    desc: ["Inventory management (Excel, Sage).", "Pentest: 2 internal web intrusion tests.", "Design of logistics flowcharts."]
-                },
-                {
-                    role: "Intern",
-                    company: "Spinelle",
-                    date: "2021",
-                    logo: "logos/spinelle.jpg",
-                    fillLogo: false,
-                    desc: ["Creation of luxury products with a gemologist."]
-                }
-            ],
-            education: [
-                {
-                    role: "Master of Science",
-                    school: "Université Paris-Saclay",
-                    date: "2030",
-                    logo: "logos/saclay.png",
-                    fillLogo: false,
-                    desc: "Specialization in complex networks and security.",
-                    active: false
-                },
-                {
-                    role: "Engineering Degree",
-                    school: "ESAIP",
-                    date: "2024–2029",
-                    logo: "logos/esaip.jpg",
-                    fillLogo: true,
-                    desc: "Specialization in Cybersecurity and Networks",
-                    active: true
-                },
-                {
-                    role: "Summer Sessions",
-                    school: "UC Berkeley",
-                    date: "2026",
-                    logo: "logos/berkeley.png",
-                    fillLogo: true,
-                    desc: "Passed COMPSCI 161 and COMPSCI 61A",
-                    active: true
-                }
-            ],
-            volunteering: [
-                {
-                    role: "Volunteer Engagement",
-                    company: "Terre de promesse",
-                    date: "2022",
-                    logo: "logos/tdp.jpg",
-                    fillLogo: false,
-                    desc: ["Construction of a wooden house for reintegration."]
-                }
-            ],
-            awards: [
-                {
-                    role: "Gold Medal Lépine Jr Contest",
-                    company: "Concours Lépine",
-                    date: "2021",
-                    logo: "logos/lepine.png",
-                    fillLogo: false,
-                    desc: ["Invention of the 'Autorideau' (automatic curtain): Arduino-based system connected to a motor, 3D printed parts, and a wooden structure mounted on a curtain rod. Enables automatic opening and closing of a curtain at programmable times, resilient to power outages and adapting to timezone/hour changes."]
-                }
-            ]
-        },
-        projects: {
-            proj1: {
-                title: "Secure File Sharing System",
-                desc: "CS 161 Project (UC Berkeley) - End-to-end encrypted storage",
-                list: [
-                    "Design and implementation of an end-to-end encrypted file sharing and storage system in Go.",
-                    "Secure user authentication and confidential storage on untrusted servers.",
-                    "Cryptographic access control for file sharing and revocation."
-                ]
-            },
-            proj2: {
-                title: "Linux Server",
-                desc: "Administration of an Ubuntu server to host my projects.",
-                list: [
-                    "Stack: Ubuntu Server, Docker, Nginx, SSH, Bash.",
-                    "Hosting websites, APIs, and personal automation scripts.",
-                    "Learning Linux administration and system automation."
-                ]
-            },
-            proj3: {
-                title: "Hashly",
-                desc: "Hash Decryption App",
-                list: [
-                    "University project that automatically detects the hashing algorithm of a given hash, proposes a suitable cracking method, and generates a ready-to-use command for Hashcat."
-                ]
-            },
-            proj4: {
-                title: "Weather Bot",
-                desc: "Discord Weather Bot",
-                list: [
-                    "Stack: Python, OpenWeatherMap, Telegram API.",
-                    "Personalized weather forecasts.",
-                    "Time zone management."
-                ]
-            }
-        }
-    }
+    nav: {
+      about: "About",
+      experience: "Experience",
+      education: "Education",
+      certifications: "Certifications",
+      projects: "Projects",
+      volunteering: "Volunteering",
+      contact: "Contact"
+    },
+    about: {
+      paragraphs: [
+        "Welcome to my homepage. I am an apprentice Cybersecurity Engineer at <strong>Thales</strong> and an engineering student at <strong>ESAIP</strong> (Cybersecurity & Networks major).",
+        "I also completed Computer Security (COMPSCI 161) and Computer Programs Structure (COMPSCI 61A) at <strong>UC Berkeley</strong> during Summer Sessions.",
+        "I am deeply interested in academic and applied research in cybersecurity, focusing particularly on network security, web and internet security, and resilient architectures rather than embedded systems."
+      ],
+      notice: "<strong>Internship Search:</strong> I am actively seeking a 3-month internship from <strong>June to September</strong>."
+    },
+    sectionTitles: {
+      experience: "Work Experience",
+      education: "Education",
+      certifications: "Certifications & Honors",
+      projects: "Projects",
+      volunteering: "Volunteer Work",
+      contact: "Contact"
+    },
+    experience: [
+      {
+        role: "Cybersecurity Engineer Apprentice",
+        org: "Thales",
+        date: "2026 - Present",
+        logo: "logos/thales.jpg",
+        desc: [
+          "Involved in complex technical cybersecurity engineering initiatives.",
+          "Scripting and tooling development for automated testing on embedded systems."
+        ]
+      },
+      {
+        role: "Cybersecurity & Logistics Intern",
+        org: "Anolix",
+        date: "2025",
+        logo: "logos/anolix.jpg",
+        desc: [
+          "Conducted 2 internal web penetration tests.",
+          "Inventory and supply-chain management using Sage and Excel; design of logistics flowcharts."
+        ]
+      },
+      {
+        role: "Intern",
+        org: "Spinelle",
+        date: "2021",
+        logo: "logos/spinelle.jpg",
+        logoClass: "logo-contain-small",
+        desc: [
+          "Collaborated with a gemologist in high-end luxury jewelry design and craftsmanship."
+        ]
+      }
+    ],
+    education: [
+      {
+        degree: "Master's Degree in Cybersecurity & Networks Engineering",
+        school: "ESAIP School of Engineers",
+        date: "2024 - 2029",
+        logo: "logos/esaip.jpg",
+        desc: "CTI-accredited engineering program covering applied cryptography, network architectures, malware analysis, reverse engineering, and cyber governance."
+      },
+      {
+        degree: "Summer Sessions",
+        school: "UC Berkeley",
+        date: "2026",
+        logo: "logos/berkeley.png",
+        desc: "Successfully completed COMPSCI 161 (Computer Security: cryptography, access control, web and memory security) and COMPSCI 61A (Structure and Interpretation of Computer Programs)."
+      }
+    ],
+    certifications: [
+      {
+        title: "TOEIC Listening & Reading - 990 / 990 (Perfect Score)",
+        org: "ETS Global",
+        date: "2026",
+        logo: "logos/ets.jpg",
+        desc: "Achieved the absolute maximum score (990/990). Level C2 / Full bilingual proficiency in professional and technical English."
+      },
+      {
+        title: "CompTIA Security+",
+        org: "CompTIA",
+        date: "Certified",
+        logo: "logos/sec+.jpg",
+        link: "https://www.credly.com/badges/019bcfa0-0426-4b21-9f6a-debfe5636b9e",
+        linkLabel: "Credly",
+        desc: "Comprehensive security principles, network defense architectures, vulnerability assessment, cryptography, and incident response."
+      },
+      {
+        title: "Gold Medal - Concours Lépine International Junior",
+        org: "Concours Lépine",
+        date: "2021",
+        logo: "logos/lepine.png",
+        logoClass: "logo-contain",
+        desc: "Invention of the 'Autorideau': programmable motorized smart curtain system powered by Arduino and custom 3D-printed parts, resilient to power cuts and clock shifts."
+      }
+    ],
+    projects: [
+      {
+        title: "Secure File Sharing System",
+        context: "UC Berkeley - COMPSCI 161 Project",
+        desc: "End-to-end encrypted file sharing and storage system implemented from scratch in Go. Provides confidentiality and integrity against an adversarial/untrusted storage server, with robust cryptographic access revocation."
+      },
+      {
+        title: "Personal Infrastructure Linux Server",
+        context: "System Administration & Automation",
+        desc: "Deployment and ongoing administration of an Ubuntu dedicated server hosting containerized applications (Docker), Nginx reverse proxy with SSL, strict UFW/SSH hardening, and automated maintenance scripts."
+      },
+      {
+        title: "Hashly - Hash Identification and Cracking Tool",
+        context: "Academic project",
+        link: "https://github.com/DJ3T/Hashly",
+        linkLabel: "GitHub",
+        desc: "Automated cryptanalytic tool that detects hash algorithms, recommends suitable cracking methodologies (wordlist, rules, masks), and outputs turnkey commands for Hashcat."
+      },
+      {
+        title: "Weather Bot",
+        context: "Weather Alert Automation Bot",
+        link: "https://github.com/DJ3T/weather-bot",
+        linkLabel: "GitHub",
+        desc: "Automated weather notification bot written in Python utilizing OpenWeatherMap and Discord/Telegram APIs with multi-timezone support."
+      }
+    ],
+    volunteering: [
+      {
+        role: "Volunteer Work",
+        org: "Terre de Promesse",
+        date: "2022",
+        logo: "logos/tdp.jpg",
+        desc: "Community solidarity construction project building a wooden structure for social reintegration."
+      }
+    ],
+    contact: {
+      text: "Feel free to reach out via email or through my professional profiles for internship opportunities, research collaborations, or technical discussions:",
+      email: "timothee2t@gmail.com"
+    },
+    footer: "© 2026 Timothée Blaudin de Thé · Academic & Personal Website"
+  },
+
+  fr: {
+    metaTitle: "Timothée Blaudin de Thé",
+    metaDesc: "Site personnel et académique de Timothée Blaudin de Thé - Apprenti Ingénieur Cybersécurité chez Thales, élève-ingénieur à l'ESAIP, UC Berkeley Summer Sessions.",
+    siteTitle: "Timothée Blaudin de Thé",
+    sidebar: {
+      bio: "Apprenti Ingénieur Cybersécurité @ Thales",
+      location: "France",
+      cvText: "Curriculum Vitae (PDF)",
+      cvFile: "resume-timothee-BLAUDINDETHE.pdf"
+    },
+    nav: {
+      about: "À propos",
+      experience: "Expérience",
+      education: "Formation",
+      certifications: "Certifications",
+      projects: "Projets",
+      volunteering: "Bénévolat",
+      contact: "Contact"
+    },
+    about: {
+      paragraphs: [
+        "Bienvenue sur mon site personnel. Je suis apprenti ingénieur en cybersécurité chez <strong>Thales</strong> et élève-ingénieur à l'<strong>ESAIP</strong> (majeure Cybersécurité et Réseaux).",
+        "J'ai également suivi les cours de sécurité informatique (COMPSCI 161) et de structure logicielle (COMPSCI 61A) lors des Summer Sessions à l'<strong>UC Berkeley</strong>.",
+        "Je m'intéresse particulièrement à la recherche dans le monde de la cybersécurité, avec un intérêt marqué pour la sécurité des réseaux, la sécurité web et les architectures internet, plutôt que pour les systèmes embarqués."
+      ],
+      notice: "<strong>Recherche de stage :</strong> Je recherche activement un stage de 3 mois de <strong>juin à septembre</strong>."
+    },
+    sectionTitles: {
+      experience: "Expérience professionnelle",
+      education: "Formation",
+      certifications: "Certifications & Distinctions",
+      projects: "Projets",
+      volunteering: "Bénévolat & Engagement associatif",
+      contact: "Contact"
+    },
+    experience: [
+      {
+        role: "Apprenti Ingénieur Cybersécurité",
+        org: "Thales",
+        date: "2026 - Présent",
+        logo: "logos/thales.jpg",
+        desc: [
+          "Participation à des projets techniques complexes au sein des équipes de cybersécurité.",
+          "Développement de scripts pour le test et l'automatisation de logiciels sur systèmes embarqués."
+        ]
+      },
+      {
+        role: "Stagiaire Cybersécurité & Logistique",
+        org: "Anolix",
+        date: "2025",
+        logo: "logos/anolix.jpg",
+        desc: [
+          "Réalisation de 2 tests d'intrusion (pentest) web internes.",
+          "Gestion des stocks avec Sage et Excel, conception de logigrammes logistiques."
+        ]
+      },
+      {
+        role: "Stagiaire",
+        org: "Spinelle",
+        date: "2021",
+        logo: "logos/spinelle.jpg",
+        logoClass: "logo-contain-small",
+        desc: [
+          "Participation à la conception et création de pièces de joaillerie avec une gemmologue."
+        ]
+      }
+    ],
+    education: [
+      {
+        degree: "Diplôme d'ingénieur en Cybersécurité et Réseaux",
+        school: "ESAIP (École d'Ingénieurs)",
+        date: "2024 - 2029",
+        logo: "logos/esaip.jpg",
+        desc: "Formation d'ingénieur habilitée CTI : cryptographie, sécurité des infrastructures, protocoles réseaux, reverse engineering et gouvernance cyber."
+      },
+      {
+        degree: "Summer Sessions",
+        school: "UC Berkeley",
+        date: "2026",
+        logo: "logos/berkeley.png",
+        desc: "Validation avec succès de COMPSCI 161 (Computer Security : cryptographie, contrôle d'accès, sécurité web et mémoire) et COMPSCI 61A (Structure and Interpretation of Computer Programs)."
+      }
+    ],
+    certifications: [
+      {
+        title: "TOEIC Listening & Reading - 990 / 990 (Score parfait)",
+        org: "ETS Global",
+        date: "2026",
+        logo: "logos/ets.jpg",
+        desc: "Obtention du score maximal absolu (990/990). Niveau C2 / Maîtrise bilingue complète de l'anglais professionnel et technique."
+      },
+      {
+        title: "CompTIA Security+",
+        org: "CompTIA",
+        date: "Certifié",
+        logo: "logos/sec+.jpg",
+        link: "https://www.credly.com/badges/019bcfa0-0426-4b21-9f6a-debfe5636b9e",
+        linkLabel: "Credly",
+        desc: "Maîtrise des principes fondamentaux de sécurité, architectures réseau, gestion des vulnérabilités, cryptographie et réponse aux incidents."
+      },
+      {
+        title: "Médaille d’Or - Concours Lépine International Junior",
+        org: "Concours Lépine",
+        date: "2021",
+        logo: "logos/lepine.png",
+        logoClass: "logo-contain",
+        desc: "Invention de l'« Autorideau » : système automatisé connecté à base d'Arduino, pièces imprimées en 3D et motorisation intégrée, résistant aux pannes d'alimentation électrique et synchronisé."
+      }
+    ],
+    projects: [
+      {
+        title: "Système de Partage de Fichiers Sécurisé",
+        context: "UC Berkeley - Projet COMPSCI 161",
+        desc: "Conception et implémentation intégrale en Go d'un système de partage de fichiers chiffré de bout en bout. Garantit la confidentialité et l'intégrité même face à un serveur de stockage malveillant ou non fiable, avec mécanismes cryptographiques avancés pour le partage sécurisé et la révocation dynamique des accès."
+      },
+      {
+        title: "Serveur Linux d'Infrastructure Personnelle",
+        context: "Administration système & automatisation",
+        desc: "Déploiement et administration continue d'un serveur dédié sous Ubuntu Server. Hébergement de services web conteneurisés avec Docker et reverse proxy Nginx, durcissement des accès SSH, pare-feu UFW et automatisation des sauvegardes par scripts Bash."
+      },
+      {
+        title: "Hashly - Outil d'Analyse et de Déchiffrement de Hachages",
+        context: "Projet universitaire",
+        link: "https://github.com/DJ3T/Hashly",
+        linkLabel: "GitHub",
+        desc: "Application d'analyse qui identifie automatiquement l'algorithme d'un hachage cryptographique donné, suggère les stratégies d'attaque adaptées (dictionnaire, masque, règles) et génère la commande optimisée pour Hashcat."
+      },
+      {
+        title: "Weather Bot",
+        context: "Bot d'automatisation d'alertes météo",
+        link: "https://github.com/DJ3T/weather-bot",
+        linkLabel: "GitHub",
+        desc: "Bot Discord et Telegram développé en Python fournissant des prévisions météorologiques personnalisées et des alertes programmées, avec gestion dynamique des fuseaux horaires."
+      }
+    ],
+    volunteering: [
+      {
+        role: "Engagement Associatif",
+        org: "Terre de Promesse",
+        date: "2022",
+        logo: "logos/tdp.jpg",
+        desc: "Chantier solidaire de construction d'une structure en bois dédiée à la réinsertion sociale."
+      }
+    ],
+    contact: {
+      text: "N'hésitez pas à me contacter par email ou via mes réseaux professionnels pour toute opportunité de stage, projet de recherche ou échange technique :",
+      email: "timothee2t@gmail.com"
+    },
+    footer: "© 2026 Timothée Blaudin de Thé · Site académique & personnel"
+  }
 };
 
-// State
+// Global State - Default is English as requested
 let currentLang = 'en';
-let typed;
 
-// DOM Elements
-const sections = document.querySelectorAll('main > section');
-const navLinks = document.querySelectorAll('nav a');
-const themeBtn = document.getElementById('theme-toggle');
-
-// Functions
-function showSection(id) {
-    if (id === 'home') {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-        return;
-    }
-    const target = document.getElementById(id);
-    if (target) {
-        const headerOffset = 70; // Header height
-        const elementPosition = target.offsetTop;
-        const offsetPosition = elementPosition - headerOffset;
-
-        window.scrollTo({
-            top: offsetPosition,
-            behavior: 'smooth'
-        });
-    }
+/**
+ * Toggle Language between English and French
+ */
+function toggleLanguage() {
+  currentLang = currentLang === 'en' ? 'fr' : 'en';
+  localStorage.setItem('lang', currentLang);
+  renderPage();
 }
 
-// ScrollSpy: Update active nav links based on current scroll position
-function updateActiveNavLink() {
-    let current = 'home';
-    const headerOffset = 100; // offset threshold
+/**
+ * Toggle Theme between Light (White) and Dark (Deep Navy Blue)
+ */
+function toggleTheme() {
+  document.body.classList.toggle('dark');
+  const isDark = document.body.classList.contains('dark');
+  localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  updateThemeIcon(isDark);
+}
 
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        if (window.pageYOffset >= (sectionTop - headerOffset)) {
-            current = section.getAttribute('id');
-        }
+function updateThemeIcon(isDark) {
+  const icon = document.getElementById('theme-icon');
+  if (icon) {
+    if (isDark) {
+      icon.className = 'fas fa-sun';
+      icon.parentElement.setAttribute('title', currentLang === 'en' ? 'Switch to Light mode' : 'Passer en mode jour');
+    } else {
+      icon.className = 'fas fa-moon';
+      icon.parentElement.setAttribute('title', currentLang === 'en' ? 'Switch to Dark mode' : 'Passer en mode nuit');
+    }
+  }
+}
+
+/**
+ * Render the entire site content for the active language
+ */
+function renderPage() {
+  const t = translations[currentLang];
+  document.documentElement.lang = currentLang;
+  document.title = t.metaTitle;
+
+  // Language button text displays target language
+  const langBtn = document.getElementById('lang-btn');
+  if (langBtn) {
+    langBtn.textContent = currentLang === 'en' ? 'FR' : 'EN';
+    langBtn.title = currentLang === 'en' ? 'Passer en Français' : 'Switch to English';
+  }
+
+  // Sidebar elements
+  const sidebarBio = document.getElementById('sidebar-bio');
+  if (sidebarBio) sidebarBio.textContent = t.sidebar.bio;
+
+  const sidebarLocation = document.getElementById('sidebar-location');
+  if (sidebarLocation) sidebarLocation.textContent = t.sidebar.location;
+
+  const sidebarCv = document.getElementById('sidebar-cv');
+  const sidebarCvText = document.getElementById('sidebar-cv-text');
+  if (sidebarCv) {
+    sidebarCv.href = t.sidebar.cvFile;
+    if (sidebarCvText) sidebarCvText.textContent = t.sidebar.cvText;
+  }
+
+  // Navigation Links
+  const navIds = ['nav-about', 'nav-experience', 'nav-education', 'nav-certifications', 'nav-projects', 'nav-volunteering', 'nav-contact'];
+  const navKeys = ['about', 'experience', 'education', 'certifications', 'projects', 'volunteering', 'contact'];
+  navIds.forEach((id, i) => {
+    const el = document.getElementById(id);
+    if (el) el.textContent = t.nav[navKeys[i]];
+  });
+
+  // Section Titles
+  const sectionIds = ['experience-title', 'education-title', 'certifications-title', 'projects-title', 'volunteering-title', 'contact-title'];
+  const titleKeys = ['experience', 'education', 'certifications', 'projects', 'volunteering', 'contact'];
+  sectionIds.forEach((id, i) => {
+    const el = document.getElementById(id);
+    if (el) el.textContent = t.sectionTitles[titleKeys[i]];
+  });
+
+  // Bio Section
+  const bioLead = document.getElementById('bio-lead');
+  if (bioLead) {
+    bioLead.innerHTML = `
+      ${t.about.paragraphs.map(p => `<p>${p}</p>`).join('')}
+      <p class="internship-lead">${t.about.notice}</p>
+    `;
+  }
+
+  // Experience Section
+  renderExperience(t.experience);
+
+  // Education Section
+  renderEducation(t.education);
+
+  // Certifications Section
+  renderCertifications(t.certifications);
+
+  // Projects Section
+  renderProjects(t.projects);
+
+  // Volunteering Section
+  renderVolunteering(t.volunteering);
+
+  // Contact Section
+  renderContact(t.contact);
+
+  // Footer
+  const footerText = document.getElementById('footer-text');
+  if (footerText) footerText.textContent = t.footer;
+
+  // Update theme button tooltip
+  const isDark = document.body.classList.contains('dark');
+  updateThemeIcon(isDark);
+}
+
+/**
+ * Render Experience Entries
+ */
+function renderExperience(items) {
+  const container = document.getElementById('experience-list');
+  if (!container) return;
+
+  container.innerHTML = items.map(item => `
+    <div class="academic-entry">
+      <div class="entry-logo-col">
+        <img src="${item.logo}" alt="${item.org} Logo" class="entry-logo ${item.logoClass || ''}" />
+      </div>
+      <div class="entry-body">
+        <div class="entry-header">
+          <span class="entry-title">${item.role} · <span class="entry-org">${item.org}</span></span>
+          <span class="entry-date">${item.date}</span>
+        </div>
+        <div class="entry-desc">
+          <ul>
+            ${item.desc.map(line => `<li>${line}</li>`).join('')}
+          </ul>
+        </div>
+      </div>
+    </div>
+  `).join('');
+}
+
+/**
+ * Render Education Entries
+ */
+function renderEducation(items) {
+  const container = document.getElementById('education-list');
+  if (!container) return;
+
+  container.innerHTML = items.map(item => `
+    <div class="academic-entry">
+      <div class="entry-logo-col">
+        <img src="${item.logo}" alt="${item.school} Logo" class="entry-logo ${item.logoClass || ''}" />
+      </div>
+      <div class="entry-body">
+        <div class="entry-header">
+          <span class="entry-title">${item.degree}</span>
+          <span class="entry-date">${item.date}</span>
+        </div>
+        <div class="entry-subtitle">${item.school}</div>
+        <div class="entry-desc">${item.desc}</div>
+      </div>
+    </div>
+  `).join('');
+}
+
+/**
+ * Render Certifications Entries
+ */
+function renderCertifications(items) {
+  const container = document.getElementById('certifications-list');
+  if (!container) return;
+
+  container.innerHTML = items.map(item => {
+    const linkHtml = item.link ? `
+      <span class="bracket-link">[<a href="${item.link}" target="_blank" rel="noopener noreferrer">${item.linkLabel || 'Link'}</a>]</span>
+    ` : '';
+
+    return `
+      <div class="academic-entry">
+        <div class="entry-logo-col">
+          <img src="${item.logo}" alt="${item.org} Logo" class="entry-logo ${item.logoClass || ''}" />
+        </div>
+        <div class="entry-body">
+          <div class="entry-header">
+            <span class="entry-title">${item.title} ${linkHtml}</span>
+            <span class="entry-date">${item.date}</span>
+          </div>
+          <div class="entry-subtitle">${item.org}</div>
+          <div class="entry-desc">${item.desc}</div>
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+/**
+ * Render Projects Entries (without tech tags underneath)
+ */
+function renderProjects(items) {
+  const container = document.getElementById('projects-list');
+  if (!container) return;
+
+  container.innerHTML = items.map(item => {
+    const linkHtml = item.link ? `
+      <span class="bracket-link">[<a href="${item.link}" target="_blank" rel="noopener noreferrer">${item.linkLabel || 'Code'}</a>]</span>
+    ` : '';
+
+    return `
+      <div class="academic-entry">
+        <div class="entry-body">
+          <div class="entry-header">
+            <span class="entry-title">${item.title} ${linkHtml}</span>
+            <span class="entry-date">${item.context}</span>
+          </div>
+          <div class="entry-desc">
+            <p>${item.desc}</p>
+          </div>
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+/**
+ * Render Volunteering Entries
+ */
+function renderVolunteering(items) {
+  const container = document.getElementById('volunteering-list');
+  if (!container) return;
+
+  container.innerHTML = items.map(item => `
+    <div class="academic-entry">
+      <div class="entry-logo-col">
+        <img src="${item.logo}" alt="${item.org} Logo" class="entry-logo ${item.logoClass || ''}" />
+      </div>
+      <div class="entry-body">
+        <div class="entry-header">
+          <span class="entry-title">${item.role} · <span class="entry-org">${item.org}</span></span>
+          <span class="entry-date">${item.date}</span>
+        </div>
+        <div class="entry-desc">
+          <p>${item.desc}</p>
+        </div>
+      </div>
+    </div>
+  `).join('');
+}
+
+/**
+ * Render Contact
+ */
+function renderContact(contact) {
+  const container = document.getElementById('contact-content');
+  if (!container) return;
+
+  container.innerHTML = `
+    <p>${contact.text}</p>
+    <div class="contact-links-grid">
+      <a href="mailto:${contact.email}" class="contact-card-btn">
+        <i class="fas fa-envelope"></i>
+        <span>${contact.email}</span>
+      </a>
+      <a href="https://github.com/DJ3T" target="_blank" rel="noopener noreferrer" class="contact-card-btn">
+        <i class="fab fa-github"></i>
+        <span>GitHub (@DJ3T)</span>
+      </a>
+      <a href="https://www.linkedin.com/in/timothee-blaudin-de-the/" target="_blank" rel="noopener noreferrer" class="contact-card-btn">
+        <i class="fab fa-linkedin"></i>
+        <span>LinkedIn</span>
+      </a>
+    </div>
+  `;
+}
+
+/**
+ * Active Navigation ScrollSpy
+ */
+function initScrollSpy() {
+  const sections = document.querySelectorAll('section.section');
+  const navLinks = document.querySelectorAll('.nav-links a');
+
+  function onScroll() {
+    let currentId = 'about';
+    const offset = 120;
+
+    sections.forEach(sec => {
+      const top = sec.offsetTop - offset;
+      if (window.scrollY >= top) {
+        currentId = sec.getAttribute('id');
+      }
     });
 
     navLinks.forEach(link => {
-        link.classList.remove('active');
-        const href = link.getAttribute('href');
-        const id = href === '#' ? 'home' : href.replace('#', '');
-        if (id === current) {
-            link.classList.add('active');
-        }
+      link.classList.remove('active');
+      const href = link.getAttribute('href');
+      if (href === `#${currentId}`) {
+        link.classList.add('active');
+      }
     });
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
 }
 
-window.addEventListener('scroll', updateActiveNavLink);
+/**
+ * Mobile Navigation Toggle
+ */
+function initMobileNav() {
+  const toggleBtn = document.getElementById('menu-toggle');
+  const navMenu = document.getElementById('nav-menu');
 
-// ===== SCROLL PROGRESS BAR =====
-const scrollProgress = document.getElementById('scroll-progress');
-function updateScrollProgress() {
-    const scrollTop = window.scrollY || document.documentElement.scrollTop;
-    const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
-    if (scrollProgress) scrollProgress.style.width = pct + '%';
-}
-window.addEventListener('scroll', updateScrollProgress, { passive: true });
-
-// ===== BACK TO TOP BUTTON =====
-const backToTopBtn = document.getElementById('back-to-top');
-function updateBackToTop() {
-    if (!backToTopBtn) return;
-    if (window.scrollY > 400) {
-        backToTopBtn.classList.add('visible');
-    } else {
-        backToTopBtn.classList.remove('visible');
-    }
-}
-window.addEventListener('scroll', updateBackToTop, { passive: true });
-if (backToTopBtn) {
-    backToTopBtn.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-}
-
-// ===== SCROLL REVEAL OBSERVER =====
-const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            revealObserver.unobserve(entry.target);
-        }
-    });
-}, { threshold: 0.12 });
-
-function initRevealObserver() {
-    document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => {
-        revealObserver.observe(el);
-    });
-}
-
-function toggleTheme() {
-    document.body.classList.toggle('dark');
-    const isDark = document.body.classList.contains('dark');
-    localStorage.setItem('theme', isDark ? 'dark' : 'light');
-    updateThemeIcon();
-}
-
-function updateThemeIcon() {
-    const isDark = document.body.classList.contains('dark');
-    const btn = document.querySelector('button[onclick="toggleTheme()"]');
-    if (btn) btn.textContent = isDark ? '☀️' : '🌓';
-}
-
-function toggleLanguage() {
-    const newLang = currentLang === 'fr' ? 'en' : 'fr';
-    switchLang(newLang);
-}
-
-function initTyped(strings) {
-    if (typed) {
-        typed.destroy();
-    }
-    typed = new Typed('#typed', {
-        strings: strings,
-        typeSpeed: 50,
-        backSpeed: 30,
-        backDelay: 2000,
-        loop: false,
-        cursorChar: '|',
-        onComplete: function (self) { self.cursor.remove() }
-    });
-}
-
-function switchLang(lang) {
-    currentLang = lang;
-    const t = translations[lang];
-
-    // Update Flag Icon
-    const langBtn = document.getElementById('lang-btn');
-    if (langBtn) {
-        // If current lang is FR, show EN flag (to switch to) ?? Or show current?
-        // User asked for "emoji qui switch dans anglais a français", usually implies a toggle. 
-        // If I am in FR, I see a flag that suggests "Change to EN"? Or "Current is FR"?
-        // Standard is often showing the *current* or the *target*.
-        // Let's go with showing the *target* language flag, or a static globe?
-        // User said: "juste l'émoji qui switch dans anglais a français"
-        // Let's implement: if FR, show UK flag. If EN, show FR flag.
-        langBtn.textContent = lang === 'fr' ? '🇺🇸 / 🇬🇧' : '🇫🇷';
-        langBtn.title = lang === 'fr' ? 'Switch to English' : 'Passer en Français';
-    }
-
-    // Update simple text elements
-    setText('greeting', t.greeting);
-    setText('static-intro', t.staticIntro);
-    initTyped(t.typedItems);
-    setHTML('intro2', t.intro2);
-    setText('scroll-hint-text', t.scrollHint);
-    setText('download-btn', t.download);
-    setText('contact-download-btn', t.download); // Secondary button
-
-    // Dynamic CV download links based on language
-    const resumePath = lang === 'fr' ? 'resume-timothee-BLAUDINDETHE.pdf' : 'resume-timothee-BLAUDINDETHE-english.pdf';
-    const downloadBtn = document.getElementById('download-btn');
-    if (downloadBtn) {
-        downloadBtn.setAttribute('href', resumePath);
-    }
-    const contactDownloadBtn = document.getElementById('contact-download-btn');
-    if (contactDownloadBtn) {
-        contactDownloadBtn.setAttribute('href', resumePath);
-    }
-
-    // Update Section Titles
-    setText('skills-title', t.skillsTitle);
-    setText('projects-title', t.projectsTitle);
-    setText('certifications-title', t.certificationsTitle);
-    setText('experience-title', t.experienceTitle);
-    setText('contact-title', t.contactTitle);
-
-    // Update Nav
-    const navKeys = ['navHome', 'navExperience', 'navCertifications', 'navProjects', 'navSkills', 'navContact'];
-    const navIds = ['nav-home', 'nav-experience', 'nav-certifications', 'nav-projects', 'nav-skills', 'nav-contact'];
-
-    navIds.forEach((id, index) => {
-        setText(id, t[navKeys[index]]);
+  if (toggleBtn && navMenu) {
+    toggleBtn.addEventListener('click', () => {
+      const isOpen = navMenu.classList.toggle('open');
+      toggleBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      const icon = toggleBtn.querySelector('i');
+      if (icon) {
+        icon.className = isOpen ? 'fas fa-xmark' : 'fas fa-bars';
+      }
     });
 
-    // Update Footer
-    setText('footer-text', '');
-    const footerEl = document.getElementById('footer-text');
-    if (footerEl) {
-        footerEl.innerHTML = `Conçu par <strong>Timothée BLAUDIN DE THÉ</strong> · 2025`;
-        if (lang === 'en') footerEl.innerHTML = `Designed by <strong>Timothée BLAUDIN DE THÉ</strong> · 2025`;
-    }
-
-    // Update Skills
-    setText('tech-skills-title', t.skills.techTitle);
-    setText('soft-skills-title', t.skills.softTitle);
-    setText('lang-skills-title', t.skills.langTitle);
-
-    updateList('tech-skills-list', t.skills.tech);
-    updateList('soft-skills-list', t.skills.soft);
-    updateList('lang-skills-list', t.skills.lang);
-
-    // Update Certifications
-    setText('cert-1-desc-1', t.certifications.cert1[0]);
-    setText('cert-1-desc-2', t.certifications.cert1[1]);
-    setText('cert-2-desc-1', t.certifications.cert2[0]);
-    setText('cert-3-desc-1', t.certifications.cert3[0]);
-    setText('cert-4-desc-1', t.certifications.cert4[0]);
-
-    // Update Category Headers
-    setText('exp-category-work', t.experience.categories.work);
-    setText('exp-category-education', t.experience.categories.education);
-    setText('exp-category-volunteering', t.experience.categories.volunteering);
-    setText('exp-category-awards', t.experience.categories.awards);
-
-    // Render lists
-    renderExperienceList('experience-work-list', t.experience.work);
-    renderExperienceList('experience-education-list', t.experience.education);
-    renderExperienceList('experience-volunteering-list', t.experience.volunteering);
-    renderExperienceList('experience-awards-list', t.experience.awards);
-
-    // Update Projects
-    for (let i = 1; i <= 4; i++) {
-        const proj = t.projects[`proj${i}`];
-        setText(`proj-${i}-title`, proj.title);
-        setText(`proj-${i}-desc`, proj.desc);
-        proj.list.forEach((line, idx) => {
-            setText(`proj-${i}-li-${idx + 1}`, line);
-        });
-    }
+    navMenu.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('open');
+        toggleBtn.setAttribute('aria-expanded', 'false');
+        const icon = toggleBtn.querySelector('i');
+        if (icon) icon.className = 'fas fa-bars';
+      });
+    });
+  }
 }
 
-function setText(id, text) {
-    const el = document.getElementById(id);
-    if (el) el.textContent = text;
-}
-
-function setHTML(id, html) {
-    const el = document.getElementById(id);
-    if (el) el.innerHTML = html;
-}
-
-// Initialization
+/**
+ * Initialize on page load
+ */
 document.addEventListener('DOMContentLoaded', () => {
-    // Theme: default to dark on first visit, and always apply stored theme
-    try {
-        let savedTheme = localStorage.getItem('theme');
-        if (!savedTheme) {
-            // no saved theme -> default to dark and remember it
-            savedTheme = 'dark';
-            localStorage.setItem('theme', 'dark');
-            localStorage.setItem('visited_before', '1');
-        }
-        document.body.classList.toggle('dark', savedTheme === 'dark');
-    } catch (e) {
-        // ignore storage errors
-    }
-    updateThemeIcon();
+  // Always default to white (day mode) on initial visits or reset
+  let savedTheme = localStorage.getItem('theme');
+  if (!savedTheme || localStorage.getItem('theme_v3') !== 'true') {
+    savedTheme = 'light';
+    localStorage.setItem('theme', 'light');
+    localStorage.setItem('theme_v3', 'true');
+  }
+  const isDark = savedTheme === 'dark';
+  document.body.classList.toggle('dark', isDark);
 
-    // Init Typed
-    if (translations[currentLang] && translations[currentLang].typedItems) {
-        initTyped(translations[currentLang].typedItems);
-    }
+  // Default to English ('en')
+  let savedLang = localStorage.getItem('lang');
+  if (!savedLang || localStorage.getItem('lang_v3') !== 'true') {
+    savedLang = 'en';
+    localStorage.setItem('lang', 'en');
+    localStorage.setItem('lang_v3', 'true');
+  }
+  currentLang = savedLang === 'fr' ? 'fr' : 'en';
 
-    // Mobile Menu Toggle
-    const menuToggle = document.getElementById('menu-toggle');
-    const navUl = document.querySelector('nav ul');
+  // Render initial page
+  renderPage();
 
-    if (menuToggle && navUl) {
-        menuToggle.addEventListener('click', () => {
-            navUl.classList.toggle('active');
-            const isActive = navUl.classList.contains('active');
-            menuToggle.textContent = isActive ? '✕' : '☰';
-            menuToggle.setAttribute('aria-expanded', isActive);
-        });
-    }
-
-    // Navigation Click Handling
-    document.querySelectorAll('nav a').forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-            const href = link.getAttribute('href');
-            const id = href === '#' ? 'home' : href.replace('#', '');
-            showSection(id);
-
-            // Close mobile menu
-            if (navUl && navUl.classList.contains('active')) {
-                navUl.classList.remove('active');
-                if (menuToggle) {
-                    menuToggle.textContent = '☰';
-                    menuToggle.setAttribute('aria-expanded', 'false');
-                }
-            }
-        });
-    });
-
-    // Avatar / Thales logo click -> Smooth scroll to experience section
-    const avatarWrapper = document.querySelector('.hero-avatar-wrapper');
-    if (avatarWrapper) {
-        avatarWrapper.addEventListener('click', (e) => {
-            e.preventDefault();
-            showSection('experience');
-        });
-    }
-
-    // Force initial render of skills
-    switchLang(currentLang);
-
-    // Set correct active nav link on page load based on scroll position
-    updateActiveNavLink();
-
-    // Add reveal classes to cards & section headings
-    document.querySelectorAll('.card, .linkedin-card, .cert-card, .project-card').forEach((el, i) => {
-        el.classList.add('reveal');
-        if (i % 2 === 1) el.classList.add(`reveal-delay-${Math.min(i % 4 + 1, 4)}`);
-    });
-    document.querySelectorAll('section h2').forEach(el => el.classList.add('reveal'));
-    initRevealObserver();
-
-    // Initial scroll states
-    updateScrollProgress();
-    updateBackToTop();
+  // ScrollSpy & Navigation
+  initScrollSpy();
+  initMobileNav();
 });
-
-// Helper: Update UL list
-function updateList(id, items) {
-    const ul = document.getElementById(id);
-    if (ul) {
-        ul.innerHTML = '';
-        items.forEach(item => {
-            const li = document.createElement('li');
-            li.textContent = item;
-            ul.appendChild(li);
-        });
-    }
-}
-
-// Helper: Render LinkedIn-style lists dynamically
-function renderExperienceList(containerId, items) {
-    const container = document.getElementById(containerId);
-    if (!container) return;
-    container.innerHTML = '';
-
-    // Filter active items
-    const activeItems = items.filter(item => item.active !== false);
-
-    if (activeItems.length === 0) {
-        // Hide the card if no active items
-        const card = container.closest('.linkedin-card');
-        if (card) card.style.display = 'none';
-        return;
-    } else {
-        const card = container.closest('.linkedin-card');
-        if (card) card.style.display = 'block';
-    }
-
-    activeItems.forEach((item, idx) => {
-        const itemEl = document.createElement('div');
-        itemEl.className = 'linkedin-item';
-
-        // Logo Column
-        const logoCol = document.createElement('div');
-        logoCol.className = 'linkedin-logo-col';
-
-        const img = document.createElement('img');
-        img.src = item.logo;
-        img.alt = `${item.company || item.school} Logo`;
-        img.className = 'linkedin-item-logo';
-        if (item.fillLogo) {
-            img.classList.add('fill-logo');
-        }
-        logoCol.appendChild(img);
-
-        // Content Column
-        const contentCol = document.createElement('div');
-        contentCol.className = 'linkedin-content-col';
-
-        const roleEl = document.createElement('h4');
-        roleEl.className = 'linkedin-item-role';
-        roleEl.textContent = item.school ? item.school : item.role;
-        contentCol.appendChild(roleEl);
-
-        const orgEl = document.createElement('span');
-        orgEl.className = 'linkedin-item-org';
-        orgEl.textContent = item.school ? item.role : item.company;
-        contentCol.appendChild(orgEl);
-
-        const dateEl = document.createElement('span');
-        dateEl.className = 'linkedin-item-date';
-        dateEl.textContent = item.date;
-        contentCol.appendChild(dateEl);
-
-        if (item.desc) {
-            const descEl = document.createElement('div');
-            descEl.className = 'linkedin-item-desc';
-            if (Array.isArray(item.desc)) {
-                const ul = document.createElement('ul');
-                item.desc.forEach(line => {
-                    const li = document.createElement('li');
-                    li.textContent = line;
-                    ul.appendChild(li);
-                });
-                descEl.appendChild(ul);
-            } else {
-                const p = document.createElement('p');
-                p.textContent = item.desc;
-                descEl.appendChild(p);
-            }
-            contentCol.appendChild(descEl);
-        }
-
-        itemEl.appendChild(logoCol);
-        itemEl.appendChild(contentCol);
-
-        container.appendChild(itemEl);
-
-        // Add a divider line between items (not after the last one)
-        if (idx < activeItems.length - 1) {
-            const divider = document.createElement('hr');
-            divider.className = 'linkedin-divider';
-            container.appendChild(divider);
-        }
-    });
-}
