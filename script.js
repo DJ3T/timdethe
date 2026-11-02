@@ -46,8 +46,8 @@ const translations = {
         date: "2026 - Present",
         logo: "logos/thales.jpg",
         desc: [
-          "Involved in complex technical cybersecurity engineering initiatives.",
-          "Scripting and tooling development for automated testing on embedded systems."
+          "Security vulnerability analysis on embedded systems using test suites.",
+          "Development of cybersecurity tools for IVVQ teams."
         ]
       },
       {
@@ -89,13 +89,6 @@ const translations = {
     ],
     certifications: [
       {
-        title: "TOEIC Listening & Reading - 990 / 990 (Perfect Score)",
-        org: "ETS Global",
-        date: "2026",
-        logo: "logos/ets.jpg",
-        desc: "Achieved the absolute maximum score (990/990). Level C2 / Full bilingual proficiency in professional and technical English."
-      },
-      {
         title: "CompTIA Security+",
         org: "CompTIA",
         date: "Certified",
@@ -103,6 +96,13 @@ const translations = {
         link: "https://www.credly.com/badges/019bcfa0-0426-4b21-9f6a-debfe5636b9e",
         linkLabel: "Credly",
         desc: "Comprehensive security principles, network defense architectures, vulnerability assessment, cryptography, and incident response."
+      },
+      {
+        title: "TOEIC Listening & Reading - 990 / 990 (Perfect Score)",
+        org: "ETS Global",
+        date: "2026",
+        logo: "logos/ets.jpg",
+        desc: "Achieved the absolute maximum score (990/990). Level C2 / Full bilingual proficiency in professional and technical English."
       },
       {
         title: "Gold Medal - Concours Lépine International Junior",
@@ -125,11 +125,11 @@ const translations = {
         desc: "Deployment and ongoing administration of an Ubuntu dedicated server hosting containerized applications (Docker), Nginx reverse proxy with SSL, strict UFW/SSH hardening, and automated maintenance scripts."
       },
       {
-        title: "Hashly - Hash Identification and Cracking Tool",
-        context: "Academic project",
-        link: "https://github.com/DJ3T/Hashly",
+        title: "PowerAudit - Windows Compliance & Security Scanner",
+        context: "Security Audit & PowerShell Tooling",
+        link: "https://github.com/DJ3T/PowerAudit",
         linkLabel: "GitHub",
-        desc: "Automated cryptanalytic tool that detects hash algorithms, recommends suitable cracking methodologies (wordlist, rules, masks), and outputs turnkey commands for Hashcat."
+        desc: "Lightweight, non-intrusive offline Windows security audit tool developed in PowerShell. Evaluates key security controls (firewall, Windows Defender, RDP, SMBv1, open listening ports, password policies) with direct terminal reporting, designed for standalone execution or deployment via Bash Bunny."
       },
       {
         title: "Weather Bot",
@@ -197,8 +197,8 @@ const translations = {
         date: "2026 - Présent",
         logo: "logos/thales.jpg",
         desc: [
-          "Participation à des projets techniques complexes au sein des équipes de cybersécurité.",
-          "Développement de scripts pour le test et l'automatisation de logiciels sur systèmes embarqués."
+          "Analyse de failles et de vulnérabilités de sécurité sur systèmes embarqués via des suites de tests.",
+          "Développement d'outils de cybersécurité pour les équipes IVVQ."
         ]
       },
       {
@@ -240,13 +240,6 @@ const translations = {
     ],
     certifications: [
       {
-        title: "TOEIC Listening & Reading - 990 / 990 (Score parfait)",
-        org: "ETS Global",
-        date: "2026",
-        logo: "logos/ets.jpg",
-        desc: "Obtention du score maximal absolu (990/990). Niveau C2 / Maîtrise bilingue complète de l'anglais professionnel et technique."
-      },
-      {
         title: "CompTIA Security+",
         org: "CompTIA",
         date: "Certifié",
@@ -254,6 +247,13 @@ const translations = {
         link: "https://www.credly.com/badges/019bcfa0-0426-4b21-9f6a-debfe5636b9e",
         linkLabel: "Credly",
         desc: "Maîtrise des principes fondamentaux de sécurité, architectures réseau, gestion des vulnérabilités, cryptographie et réponse aux incidents."
+      },
+      {
+        title: "TOEIC Listening & Reading - 990 / 990 (Score parfait)",
+        org: "ETS Global",
+        date: "2026",
+        logo: "logos/ets.jpg",
+        desc: "Obtention du score maximal absolu (990/990). Niveau C2 / Maîtrise bilingue complète de l'anglais professionnel et technique."
       },
       {
         title: "Médaille d’Or - Concours Lépine International Junior",
@@ -276,11 +276,11 @@ const translations = {
         desc: "Déploiement et administration continue d'un serveur dédié sous Ubuntu Server. Hébergement de services web conteneurisés avec Docker et reverse proxy Nginx, durcissement des accès SSH, pare-feu UFW et automatisation des sauvegardes par scripts Bash."
       },
       {
-        title: "Hashly - Outil d'Analyse et de Déchiffrement de Hachages",
-        context: "Projet universitaire",
-        link: "https://github.com/DJ3T/Hashly",
+        title: "PowerAudit - Scanner de Conformité & Sécurité Windows",
+        context: "Audit de sécurité & outillage PowerShell",
+        link: "https://github.com/DJ3T/PowerAudit",
         linkLabel: "GitHub",
-        desc: "Application d'analyse qui identifie automatiquement l'algorithme d'un hachage cryptographique donné, suggère les stratégies d'attaque adaptées (dictionnaire, masque, règles) et génère la commande optimisée pour Hashcat."
+        desc: "Outil d'audit de sécurité Windows hors ligne, léger et non intrusif développé en PowerShell. Analyse les configurations de sécurité critiques (pare-feu, Windows Defender, RDP, SMBv1, ports ouverts, politiques de comptes) avec restitution directe dans le terminal, conçu pour une exécution autonome ou via Bash Bunny."
       },
       {
         title: "Weather Bot",
