@@ -98,14 +98,14 @@ const translations = {
         desc: "Comprehensive security principles, network defense architectures, vulnerability assessment, cryptography, and incident response."
       },
       {
-        title: "TOEIC Listening & Reading - 990 / 990 (Perfect Score)",
+        title: "TOEIC Listening & Reading - 990 / 990",
         org: "ETS Global",
         date: "2026",
         logo: "logos/ets.jpg",
         desc: "Achieved the absolute maximum score (990/990). Level C2 / Full bilingual proficiency in professional and technical English."
       },
       {
-        title: "Gold Medal - Concours Lépine International Junior",
+        title: "Gold Medal - Concours Lépine Junior",
         org: "Concours Lépine",
         date: "2021",
         logo: "logos/lepine.png",
@@ -249,14 +249,14 @@ const translations = {
         desc: "Maîtrise des principes fondamentaux de sécurité, architectures réseau, gestion des vulnérabilités, cryptographie et réponse aux incidents."
       },
       {
-        title: "TOEIC Listening & Reading - 990 / 990 (Score parfait)",
+        title: "TOEIC Listening & Reading - 990 / 990",
         org: "ETS Global",
         date: "2026",
         logo: "logos/ets.jpg",
         desc: "Obtention du score maximal absolu (990/990). Niveau C2 / Maîtrise bilingue complète de l'anglais professionnel et technique."
       },
       {
-        title: "Médaille d’Or - Concours Lépine International Junior",
+        title: "Médaille d’Or - Concours Lépine Junior",
         org: "Concours Lépine",
         date: "2021",
         logo: "logos/lepine.png",
