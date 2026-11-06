@@ -12,7 +12,9 @@ const translations = {
       bio: "Cybersecurity Engineer Apprentice @ Thales",
       location: "France",
       cvText: "Curriculum Vitae (PDF)",
-      cvFile: "resume-timothee-BLAUDINDETHE-english.pdf"
+      cvFile: "resume-timothee-BLAUDINDETHE-english.pdf",
+      recoText: "Recommendation Letter (PDF)",
+      recoFile: "recommendation-letter-hamrioui.pdf"
     },
     nav: {
       about: "About",
@@ -163,7 +165,9 @@ const translations = {
       bio: "Apprenti Ingénieur Cybersécurité @ Thales",
       location: "France",
       cvText: "Curriculum Vitae (PDF)",
-      cvFile: "resume-timothee-BLAUDINDETHE.pdf"
+      cvFile: "resume-timothee-BLAUDINDETHE.pdf",
+      recoText: "Lettre de recommandation (PDF)",
+      recoFile: "recommendation-letter-hamrioui.pdf"
     },
     nav: {
       about: "À propos",
@@ -369,6 +373,13 @@ function renderPage() {
   if (sidebarCv) {
     sidebarCv.href = t.sidebar.cvFile;
     if (sidebarCvText) sidebarCvText.textContent = t.sidebar.cvText;
+  }
+
+  const sidebarReco = document.getElementById('sidebar-reco');
+  const sidebarRecoText = document.getElementById('sidebar-reco-text');
+  if (sidebarReco) {
+    sidebarReco.href = t.sidebar.recoFile;
+    if (sidebarRecoText) sidebarRecoText.textContent = t.sidebar.recoText;
   }
 
   // Navigation Links

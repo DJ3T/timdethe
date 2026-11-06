@@ -296,18 +296,21 @@ a:hover {
   color: var(--link-color);
 }
 
-.author__urls li.cv-item {
+.author__urls li.cv-item,
+.author__urls li.reco-item {
   margin-top: 0.5rem;
   padding-top: 0.5rem;
   border-top: 1px dashed var(--border-color);
 }
 
-.author__urls li.cv-item a {
+.author__urls li.cv-item a,
+.author__urls li.reco-item a {
   font-weight: 600;
   color: var(--link-color);
 }
 
-.author__urls li.cv-item a:hover {
+.author__urls li.cv-item a:hover,
+.author__urls li.reco-item a:hover {
   text-decoration: underline;
 }
 
