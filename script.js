@@ -117,7 +117,7 @@ const translations = {
     ],
     projects: [
       {
-        title: "Secure File Sharing System",
+        title: "Secure File Sharing System (119.7 / 120)",
         context: "UC Berkeley - COMPSCI 161 Project",
         desc: "End-to-end encrypted file sharing and storage system implemented from scratch in Go. Provides confidentiality and integrity against an adversarial/untrusted storage server, with robust cryptographic access revocation."
       },
@@ -270,7 +270,7 @@ const translations = {
     ],
     projects: [
       {
-        title: "Système de Partage de Fichiers Sécurisé",
+        title: "Système de Partage de Fichiers Sécurisé (119,7 / 120)",
         context: "UC Berkeley - Projet COMPSCI 161",
         desc: "Conception et implémentation intégrale en Go d'un système de partage de fichiers chiffré de bout en bout. Garantit la confidentialité et l'intégrité même face à un serveur de stockage malveillant ou non fiable, avec mécanismes cryptographiques avancés pour le partage sécurisé et la révocation dynamique des accès."
       },
