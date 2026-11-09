@@ -86,7 +86,7 @@ const translations = {
         school: "UC Berkeley",
         date: "2026",
         logo: "logos/berkeley.png",
-        desc: "Successfully completed COMPSCI 161 (Computer Security: cryptography, access control, web and memory security) and COMPSCI 61A (Structure and Interpretation of Computer Programs)."
+        desc: "Completed COMPSCI 161 (Computer Security: cryptography, access control, web and memory security) (Grade: B+) and COMPSCI 61A (Structure and Interpretation of Computer Programs) (Pass)."
       }
     ],
     certifications: [
@@ -239,7 +239,7 @@ const translations = {
         school: "UC Berkeley",
         date: "2026",
         logo: "logos/berkeley.png",
-        desc: "Validation avec succès de COMPSCI 161 (Computer Security : cryptographie, contrôle d'accès, sécurité web et mémoire) et COMPSCI 61A (Structure and Interpretation of Computer Programs)."
+        desc: "Validation des cours COMPSCI 161 (Computer Security : cryptographie, contrôle d'accès, sécurité web et mémoire) (Note: B+) et COMPSCI 61A (Structure and Interpretation of Computer Programs) (Pass)."
       }
     ],
     certifications: [
